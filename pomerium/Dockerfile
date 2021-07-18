@@ -9,7 +9,7 @@ RUN	apk --no-cache add \
 ENV PATH /go/bin:/usr/local/go/bin:$PATH
 ENV GOPATH /go
 
-ENV POMERIUM_VERSION v0.9.0
+ENV POMERIUM_VERSION v0.14.7
 
 RUN go get github.com/pomerium/pomerium || true \
 	&& cd /go/src/github.com/pomerium/pomerium \

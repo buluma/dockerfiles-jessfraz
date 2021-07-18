@@ -5,7 +5,7 @@ RUN apk add --no-cache \
 	ca-certificates \
 	libpcap-dev
 
-ENV MASSCAN_VERSION 1.0.5
+ENV MASSCAN_VERSION 1.3.2
 
 RUN set -x \
 	&& apk add --no-cache --virtual .build-deps \

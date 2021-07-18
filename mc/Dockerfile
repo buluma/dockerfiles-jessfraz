@@ -14,7 +14,7 @@ RUN addgroup -g 1001 -S mc \
     && adduser -u 1001 -SHG mc mc \
     && mkdir -p /home/mc/.mc
 
-ENV MC_VERSION 4.8.21
+ENV MC_VERSION 4.8.26
 
 RUN set -x \
 	&& apk add --no-cache --virtual .build-deps \

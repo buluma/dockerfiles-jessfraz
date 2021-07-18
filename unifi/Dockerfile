@@ -40,7 +40,7 @@ RUN apt-get update && apt-get install -y \
 	&& rm -rf /var/lib/apt/lists/*
 
 # install gosu
-ENV GOSU_VERSION 1.12
+ENV GOSU_VERSION 1.13
 RUN set -ex; \
 	\
 	fetchDeps=' \
@@ -88,7 +88,7 @@ RUN apt-get update && apt-get install -y \
 
 # unifi version
 # From: https://www.ubnt.com/download/unifi/
-ENV UNIFI_VERSION "5.12.72"
+ENV UNIFI_VERSION "6.2.26"
 
 # install unifi
 RUN apt-get update && apt-get install -y \

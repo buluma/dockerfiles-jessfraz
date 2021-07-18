@@ -1,7 +1,7 @@
 FROM debian:stretch-slim
 LABEL maintainer "Christian Koep <christiankoep@gmail.com>"
 
-ENV POWERSHELL_VERSION 7.0.1
+ENV POWERSHELL_VERSION 7.1.3
 
 RUN apt-get update && apt-get install -y \
 	ca-certificates \

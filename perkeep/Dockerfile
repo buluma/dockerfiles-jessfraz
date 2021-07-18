@@ -5,7 +5,7 @@ RUN	apk --no-cache add \
 	ca-certificates \
 	git
 
-ENV PERKEEP_VERSION 0.10
+ENV PERKEEP_VERSION 0.11
 
 RUN mkdir -p /go/src/perkeep.org \
 	&& git clone --depth 1 --branch "${PERKEEP_VERSION}" https://github.com/perkeep/perkeep.git /go/src/perkeep.org \
